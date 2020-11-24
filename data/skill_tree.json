@@ -1,0 +1,46 @@
+{
+    "clusters": [
+        {
+            "name": "origin",
+            "skill_nodes": [
+                {
+                    "type": "origin",
+                    "id": "origin|1",
+                    "links": [
+                        "stomp|1",
+                        "backstap|1",
+                        "stealth_recon|1"
+                    ]
+                }
+            ]
+        },    
+        {
+            "name": "stomp",
+            "skill_nodes": [
+                {
+                    "id": "stomp|1",
+                    "links": [
+                        "stomp|2",
+                        "origin|1"
+                    ],
+                    "type": "stat",
+                    "stat": "melee_damage",
+                    "value": 2.3
+                },
+                {
+                    "id": "stomp|2",
+                    "links": [
+                        "stomp|1",
+                        "stomp|3"
+                    ],
+                    "type": "stat",
+                    "stat": "melee_resistance",
+                    "value": 7
+                }
+            ]
+        }    
+    ]
+}
+
+
+
