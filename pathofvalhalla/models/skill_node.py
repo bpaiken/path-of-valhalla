@@ -1,10 +1,10 @@
 class SkillNode:
     def __init__(self, args):
-        self._name = args['name']
+        # self._name = args['name']
+        self.id = args['id']
         self.links = args['links']
-        self._is_origin = args['is_origin']
         self.is_active = False
-        self.alignment = args['alignment']
+        # self.alignment = args['alignment'] #do we need this?
         self.type = args['type']
 
     # Proper way to expose an instance variable
@@ -23,3 +23,9 @@ class SkillNode:
     def is_available(self):
         print("not yet implemented")
         return None
+
+class StatSkillNode(SkillNode):
+    def __init__(self, args):
+        self.value = args['value']
+        self.stat = args['stat']
+        super().__init__(args)

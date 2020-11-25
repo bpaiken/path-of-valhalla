@@ -36,6 +36,15 @@
                     "type": "stat",
                     "stat": "melee_resistance",
                     "value": 7
+                },
+                {
+                    "id": "stomp|3",
+                    "links": [
+                        "stomp|2"
+                    ],
+                    "type": "stat",
+                    "stat": "melee_resistance",
+                    "value": 7
                 }
             ]
         }    
