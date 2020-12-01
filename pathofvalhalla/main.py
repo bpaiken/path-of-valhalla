@@ -1,6 +1,7 @@
 import json
+# import models.skill_node
 from models.types import SkillNodeType
-from models.skill_node import StatSkillNode, SkillNode
+# from models.skill_node import StatSkillNode
 from models.skill_tree import SkillTree
 
 def main():

@@ -1,5 +1,5 @@
-from skill_node import SkillNode, StatSkillNode
-from types import SkillNodeType
+from models.skill_node import StatSkillNode
+from models.types import SkillNodeType
 
 class SkillTree:
     def __init__(self, json_input = None):
